@@ -1,0 +1,31 @@
+<%layout('layouts/boilerplate')-%>
+
+    <body>
+
+
+        <form action="/" method="post" class="col-5 m-auto mt-4">
+            <h1>Add User</h1>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" aria-describedby="Name-info">
+
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="City" class="form-label">City</label>
+                <input type="text" class="form-control" name="City" aria-describedby="city-info">
+
+            </div>
+            <div class="mb-3">
+                <label for="Dept" class="form-label">Department</label>
+                <input type="text" class="form-control" name="Dept" aria-describedby="Dept-info">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </body>

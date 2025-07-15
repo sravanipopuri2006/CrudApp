@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate') -%>
+<body>
+    
+    <form action="/users/<%= element._id %>?_method=PUT" method="POST" class="col-5 m-auto mt-4">
+        <h3><b>EDIT FORM</b></h3>
+        <br>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="Name" aria-describedby="Name-info" value="<%= element.Name %>">
+          
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" value="<%= element.Email %>">
+          
+        </div>
+        <div class="mb-3">
+            <label for="City" class="form-label">City</label>
+            <input type="text" class="form-control" name="City" aria-describedby="city-info" value="<%= element.City %>">
+           
+        </div>
+        <div class="mb-3">
+            <label for="Dept" class="form-label">Department</label>
+            <input type="text" class="form-control" name="Dept" aria-describedby="Dept-info" value="<%=element.Dept %>">
+         
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        
+
+
+    </form>
+</body>

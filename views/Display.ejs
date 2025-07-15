@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate') -%>
+
+    <body class="m-auto">
+        <form action="/users" method="get" class="m-4"><button class="btn btn-outline-success">Add User</button></form>
+            <br>
+            <br>
+            <div class="container mt-2">
+                <div class="row d-flex justify-content-evenly">
+                    <% for( let i=0; i < arr.length; i++ ) { %>
+
+                        <div class="card col-lg-3 col-md-6 mb-4 " style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= arr[i].Name %>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">
+                                    <%= arr[i].Email %>
+                                </h6>
+                                <p>
+                                    <%= arr[i].City %>
+                                </p>
+                                <p>
+                                    <%= arr[i].Dept %>
+                                </p>
+                                <form action="/users/<%= arr[i]._id %>/edit" method="get" class="d-inline-flex p-2">
+                                    <button class="btn btn-outline-primary">Edit</button></form>
+                                <form action="/<%= arr[i]._id %>?_method=DELETE" method="post"
+                                    class="d-inline-flex p-2"><button class="btn btn-outline-danger">Delete</button>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <% } %>
+                </div>
+            </div>
+        
+    </body>
