@@ -8,7 +8,7 @@ This is a simple **CRUD** (Create, Read, Update, Delete) application built using
 - View all users
 - Edit existing user details
 - Delete users
-- Responsive UI (if front-end is added)
+- Responsive UI 
 - Uses MongoDB for persistent storage
 
 ## 🛠️ Tech Stack
